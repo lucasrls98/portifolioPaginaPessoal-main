@@ -1,0 +1,332 @@
+:root{
+    --font-texto: 'Roboto Slab', serif;
+    --cor-background:#0D080B;
+    --cor-secundaria:#df2d2f;
+    --cor-contraste:#ffffff;
+    --font-principal:'MrRobot', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+/* Header ------------------------------------ */
+header {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column row;
+    justify-content: space-between;
+    background-color: var(--cor-background);
+    align-items: center;
+}
+
+h1 {
+    font-family: 'MrRobot', sans-serif;
+    font-weight: 300;
+    color: var(--cor-secundaria);
+    padding-left: 15px;
+    font-size: 70px;
+}
+
+h1:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px 20px 10px 10px;
+
+
+}
+
+nav > a {
+
+    color: var(--cor-secundaria);
+    font-family: var(--font-principal);
+    font-weight: 200;
+    font-size: 40px;
+}
+
+nav > a:hover {
+    font-size: 45px;
+    transition: 0.6s;
+}
+
+/* Sobre mim-------------------------------------------- */
+
+main {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background-color: var(--cor-secundaria);
+    color: #0D080B;
+    font-family: var(--font-texto)
+}
+
+img {
+    display: block;
+}
+
+img:hover {
+    scale: 105%;
+    transition: .5s;
+}
+
+#resumo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 30px;
+    background-color: #0D080B;
+    color: var(--cor-secundaria);
+    height: auto;
+
+}
+
+.resumo-texto{
+    width: 100%;
+}
+
+.resumo-texto > h2{
+    margin: 20px;    
+}
+
+/* .paragrafo-resumo { */
+    /* display: flex;    
+    align-items: flex-start;
+    justify-content: center;    
+    line-height: 60px;
+    text-align: left;
+    padding: 10px 500px;
+    width: 120%; 
+}*/
+
+.resumo-separacao{
+    display: flex;
+    margin:100px;     
+    width:80%;
+    justify-content: space-between;
+    
+}
+
+.selfie{ 
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+h2 {
+    /* text-align: center; */
+    /* background-color: #260101; */
+    color: var(--cor-contraste);
+}
+
+/* interesses ----------------------------------------------- */
+
+#hobbie {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    height: 500px;
+    gap: 70px; */
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    font-size: 1.75rem;
+    margin: 100px;
+
+}
+
+.hobbie-texto{    
+    width: 60%;
+    
+}
+.hobbie-texto > h2{
+    margin-bottom: 20px;
+    color: var(--cor-background);
+    
+    text-align: center;
+}
+
+
+.lista-hobbie {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 87%;      
+    color: var(--cor-contraste);
+    align-items: center;
+    
+    
+}
+.hobbie-img{
+    width: 150%;
+}
+
+/* formulario------------------------------------------------- */
+
+fieldset{
+    border: none;
+}
+
+#formulario {
+    background-color: #0D080B;
+    width: 100%;
+    height: 700px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px;
+    
+}
+#formulario > h2{
+    text-align: center;
+    font-size: 2.81rem;
+    
+}
+
+
+
+form {    
+    color: #ffff;    
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    gap: 15px;
+    
+    
+    
+}
+
+textarea {
+    resize: vertical;     
+    box-sizing: border-box;    
+}
+
+#nome{
+    width: 30%;
+    padding: 10px;
+}
+
+#email{
+    width: 30%;
+    padding: 10px;
+}
+
+#mensagem{
+    width: 40%;
+    height: 60px;
+    padding: 10px;
+    font-size: 1.06rem;
+    
+
+}
+
+
+
+.rodape {
+    background-color: rgb(0, 0, 0);    
+    padding: 28px;
+    color: rgb(250, 255, 250);
+    font-size: 15px;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+
+#submit, #cancel{
+    margin: 10px;
+    width: 10%;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-contraste);
+    font-family: var(--font-texto);
+    font-size: 20px;
+
+}
+
+#cancel:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: var(--cor-background);
+    color: var(var(--cor-contraste));
+    border: 1px solid var(--cor-contraste);
+}
+
+#submit:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: var(--cor-background);
+    color: var(var(--cor-contraste));
+    border: 1px solid var(--cor-contraste);
+}
+
+@media screen and (max-width: 1200px){
+    
+    body{
+        /* display: flex; */
+        /* flex-direction: column; */
+        
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    header > nav > a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #resumo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resumo-separacao{
+        display: flex;
+        flex-direction: column;
+    }
+    .foto{
+        width: 500px;
+    }
+
+    #hobbie{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hobbie-img{
+        width: 300px;
+    }
+    
+    #formulario{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/mrrobot" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Renato Miranda</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mr Renato</h1>
+        <nav>
+            <a href="#resumo">Quem sou eu</a></li>
+            <a href="#hobbie">Interesses</a></li>
+            <a href="#formulario">Contato</a></li>
+        </nav>
+    </header>
+    <main>
+        <section id="resumo">
+            <div class="resumo-separacao">
+                <div class="selfie">
+                    <img class="foto" src="./imagens/ebanx1-removebg-preview.png"
+                        alt="Selfie na frente do logo Ebanx" />
+                </div>
+
+                <div class="resumo-texto">
+                    <h2 class="eu">Quem sou eu:</h2>
+
+                    <p class="paragrafo-resumo">
+                        Olá, me chamo Renato e sou natural de Araucária-PR. Sou amante de
+                        tecnologia e entusiasta de filosofia, astronomia e esporte. Sou
+                        Palmeirense roxo e amo praticar atividades físicas, como o boxe.
+                        Minhas séries favoritas são: Mr Robot (que me fez decidir abraçar de
+                        vez o mundo do T.i e serviu de inspiração visual para essa página), Braking Bad, The office,
+                        Family Guy, Twin
+                        Peaks e outras milhares. Meu filme favorito se chama "Um sonho de
+                        liberdade." Me considero uma pessoa divertida e sempre curiosa em
+                        aprender e desvendar, enquanto vive, esse belo mistério que é a
+                        vida.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section id="hobbie">
+            <div class="hobbie-texto">
+                <h2 class="titulo-hobbie">Interesses/Hobbies:</h2>
+                <ul class="lista-hobbie">
+                    <li>⚽Futebol</li>
+                    <li>🥊Boxe</li>
+                    <li>🎬Filmes</li>
+                    <li>🎦Séries</li>
+                    <li>🎸Tocar Guitarra</li>
+                    <li>🎮Games</li>
+                </ul>
+            </div>
+            <div class="hobbie-separacao">
+                <img class="hobbie-img" src="./imagens/boxing-animate.svg" alt="">
+            </div>
+        </section>
+        <section id="formulario">
+            <h2>Entre em contato Comigo!</h2>
+            <fieldset>
+                <form>
+                    <form class="form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                        <div class="buttons">
+                            <button id="submit" type="submit">Enviar</button>
+                            <button id="cancel" type="button" class="cancelar">Cancelar</button>
+                        </div>
+                    </form>
+            </fieldset>
+        </section>
+    </main>
+    <footer class="rodape">
+        &copy; Renato Miranda, 2023
+    </footer>
+</body>
+
+</html>
